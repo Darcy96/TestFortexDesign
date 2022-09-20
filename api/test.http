@@ -1,0 +1,30 @@
+###https://documenter.getpostman.com/view/21827423/2s7YfU5X1h#c1a557e8-ce99-4c63-adca-c0053382ed15
+
+###Login Method
+POST https://demo-api-work-test.herokuapp.com/login
+content-type: application/json
+
+{
+    "email": "front-test-431@fortexdesign.com",
+    "password": "0m9FN5e*C4h7"
+}
+
+### List groups
+GET https://demo-api-work-test.herokuapp.com/group/
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijg4YTVlMTFiLWRiZDktNDBlZS1hZjA4LTMyYzBjMDBiYmM5ZiIsIm1haWwiOiJmcm9udC10ZXN0LTQzMUBmb3J0ZXhkZXNpZ24uY29tIiwibmFtZSI6IkRldmVsb3BlciIsIm9yZ2FuaXphdGlvbklkIjoiNWFkYTVmODQtOTY5ZC00NWIzLTg1OGMtZDQ5YjBmNDQ5ODA0IiwicGVybWlzc2lvbnMiOltdLCJpYXQiOjE2NjM0Nzc0NzEsImV4cCI6MTY2NDA4MjI3MX0.giWdts0Uf4J6ZLuS6uXUONSsVkSsq8VeHRF9s0h_xR8
+
+{
+    "name": "sample",
+    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+}
+
+### Create groups
+POST https://demo-api-work-test.herokuapp.com/group/create
+content-type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijg4YTVlMTFiLWRiZDktNDBlZS1hZjA4LTMyYzBjMDBiYmM5ZiIsIm1haWwiOiJmcm9udC10ZXN0LTQzMUBmb3J0ZXhkZXNpZ24uY29tIiwibmFtZSI6IkRldmVsb3BlciIsIm9yZ2FuaXphdGlvbklkIjoiNWFkYTVmODQtOTY5ZC00NWIzLTg1OGMtZDQ5YjBmNDQ5ODA0IiwicGVybWlzc2lvbnMiOltdLCJpYXQiOjE2NjMzNDMzMjAsImV4cCI6MTY2Mzk0ODEyMH0.09JRLe7Bj4Z8oFtR9PP1wOXp5duIIha1isW_Hd94zCA
+
+{
+    "name": "Test Group",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+}
